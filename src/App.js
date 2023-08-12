@@ -1,11 +1,19 @@
 import './App.css';
+import TextStyling from './Components/textStyling';
 
-function App() {
+const stylesheet = {
+  fontSize: "25px",
+  textAlign: "center",
+  margin: "40px",
+  border: "1px solid green",
+  color: "red"
+};
+
+export default function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <TextStyling stylesheet={stylesheet} />
     </div>
   );
 }
 
-export default App;
