@@ -1,5 +1,6 @@
 import './App.css';
 import TextStyling from './Components/textStyling';
+import './Components/StylesheetOne.css'
 
 const stylesheet = {
   fontSize: "25px",
@@ -13,7 +14,11 @@ export default function App() {
   return (
     <div className="App">
       <TextStyling stylesheet={stylesheet} />
+      <div className="StyledText">
+      <h1>Boo</h1>
     </div>
+    </div>
+
   );
 }
 
